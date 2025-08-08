@@ -1,0 +1,164 @@
+body{
+    width: 100vw;
+    background-color: #f1f1f1;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+    margin: 0%;
+}
+li {
+    list-style: none;
+}
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+span {
+    font-weight: 600;
+    font-size: larger;
+}
+h2 {
+    font-weight: 600;
+}
+#Nav {
+    background-color: #f1f1f1;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    gap: 25px;
+    padding: 10px;
+}
+#Nav a {
+    color: black;
+    text-decoration: none;
+}
+#Nav img {
+    display: none;
+}
+#Home {
+    display: flex;
+    width: 100%;
+    color: white;
+    background: linear-gradient(330deg, #065084, #153448, #0F828C);
+    background-size: 180% 100%;
+    animation: gradient-animation 20s ease infinite;
+    padding: 100px 0;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.Presentation {
+    margin: 0 10%;
+}
+.profile-img {
+    margin: 20px 0;
+    height: 200px;
+    border-radius: 50%;
+}
+.Ab-text {
+    margin: 0 10%;
+}
+hr {
+    border: dotted #19519171 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+
+.software-container {
+    margin: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    flex: 1 1 0;
+    margin-top: 30px;
+    min-width: 280px;  
+}
+.projects-container {
+    gap: 30px;
+    margin: 0 10% 50px 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.proj {
+    flex: 1 1 0;
+    margin-top: 20px;
+}
+
+.projects-container img {
+    max-height: 245px;
+    border-radius: 20px;
+}
+#Contact-me {
+    margin: 0 10%;
+}
+#Contact-me p {
+    margin: 2rem 0;
+}
+button {
+    font-family: "Rubik", sans-serif;
+    padding: 15px;
+    background-color: #195191;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+}
+#Footer {
+    font-size: smaller;
+    margin-top: 100px;
+    color: white;
+    background-color: #065084;
+    padding: 25px 0;
+}
+.Footer-cont {
+    display: flex;
+    margin: 0 10%;
+    justify-content: space-between;
+}
+@media (max-width: 500px) {
+    h1 {
+        font-weight: 300;
+    }
+    span {
+        display: block;
+    }
+    #Nav {
+        padding: 5px;
+        justify-content: right;
+        border-bottom: solid #065084;
+    }
+
+    #Nav img {
+        margin: 0 20px;
+        display: block;
+        height: 40px;
+    }
+
+    #Nav li {
+        display: none;
+    }
+}
+@media (max-width: 615px) {
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+
+}
+    .projects-container img {
+        width: 100%;
+} 
+}
